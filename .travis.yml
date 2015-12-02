@@ -32,3 +32,6 @@ script:
   - ansible-playbook -i test/inventory test/main.yml --syntax-check
   - sudo ansible-playbook -i test/inventory test/main.yml
 
+notifications:
+  # notify ansible galaxy of results
+  webhooks: http://goo.gl/nSuq9h
